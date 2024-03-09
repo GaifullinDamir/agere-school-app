@@ -1,4 +1,4 @@
-import {Header} from "../../../widgets";
+import {Header, SearchPanel} from "../../../widgets";
 
 const MainPage = () => {
     return (
@@ -6,7 +6,7 @@ const MainPage = () => {
             <Header/>
             <div className='container'>
                 <main className="mainPage">
-                    
+                    <SearchPanel/>
                 </main>
             </div>
         </>
