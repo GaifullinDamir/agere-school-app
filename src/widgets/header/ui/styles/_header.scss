@@ -1,5 +1,7 @@
 .header {
     position: relative;
+    z-index: 1;
+    background: $white;
     box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
     height: 75px;
     display: flex;
@@ -16,10 +18,13 @@
         @include logo_hover;
     }
     &__container {
+        position: relative;
+        z-index: 1;
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
         width: 1400px;
+        height: 75px;
     }
     &__menu {
         display: flex;
