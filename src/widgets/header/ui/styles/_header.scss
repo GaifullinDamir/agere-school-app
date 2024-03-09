@@ -1,0 +1,11 @@
+.header {
+    position: relative;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
+    height: 75px;
+    &__logo {
+        width: 126px;
+        font-size: 42px;
+        font-weight: 400;
+        text-align: center;
+    }
+}
