@@ -5,5 +5,11 @@
     font-family: Montserrat, sans-serif;
 }
 
+.container {
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 // widgets
 @import '../widgets/header/index.scss';

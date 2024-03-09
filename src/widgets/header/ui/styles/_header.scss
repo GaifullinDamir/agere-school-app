@@ -2,10 +2,32 @@
     position: relative;
     box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
     height: 75px;
+    display: flex;
+    align-items: center;
     &__logo {
         width: 126px;
         font-size: 42px;
         font-weight: 400;
         text-align: center;
+        margin-left: 22px;
+        cursor: pointer;
+        @include logo_hover;
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 510px;
+    }
+    &__menu-item {
+        list-style: none;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: $gray-light;
+        cursor: pointer;
+        @include href_hover;
     }
 }
