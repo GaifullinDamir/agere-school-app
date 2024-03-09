@@ -5,7 +5,9 @@ const MainPage = () => {
         <>
             <Header/>
             <div className='container'>
-                MainPage
+                <main className="mainPage">
+                    
+                </main>
             </div>
         </>
         
