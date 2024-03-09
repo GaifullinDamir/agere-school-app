@@ -10,7 +10,7 @@ type DropDownProps = {
 const DropDown = ({menuItems, isOpen}: DropDownProps) => {
 
     return (
-        <ul className={`dropdown ${isOpen ? 'dropdown_hidden' : ''}`} >
+        <ul className={`dropdown ${!isOpen ? 'dropdown_hidden' : ''}`} >
             {menuItems.map((item, i) => {
                 return <li
                     key={i}
