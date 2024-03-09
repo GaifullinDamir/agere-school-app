@@ -1,10 +1,14 @@
-import React from 'react';
+import {Header} from '../../../widgets/header';
 
 const MainPage = () => {
     return (
-        <div>
-            MainPage
-        </div>
+        <>
+            <Header/>
+            <div className='container'>
+                MainPage
+            </div>
+        </>
+        
     );
 };
 

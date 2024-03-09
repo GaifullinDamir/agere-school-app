@@ -1,0 +1,65 @@
+.header {
+    position: relative;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
+    height: 75px;
+    display: flex;
+    align-items: center;
+
+    &__logo {
+        position: absolute;
+        left: 22px;
+        width: 126px;
+        font-size: 42px;
+        font-weight: 400;
+        text-align: center;
+        cursor: pointer;
+        @include logo_hover;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 1400px;
+    }
+    &__menu {
+        display: flex;
+        padding: 0;
+        justify-content: space-between;
+        align-items: center;
+        width: 510px;
+    }
+    &__menu-item {
+        list-style: none;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: $gray-dark;
+        cursor: pointer;
+        @include href_hover;
+    }
+    &__user-panel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__theme-icon {
+        margin-right: 24px;
+        height: 25px;
+        cursor: pointer;
+        @include icon_hover;
+    }
+    &__username {
+        width: 150px;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 29px;
+        color: $gray-light;
+    }
+    &__userimg {
+        height: 25px;
+        cursor: pointer;
+        @include icon_hover;
+    }
+}
