@@ -19,20 +19,20 @@ const SearchPanel = () => {
                 <option className='search-panel__option'>Дороже</option>
             </select>
             <label className='search-panel__label'>
-                <input
-                    className='search-panel__checkbox-free'
-                    type='checkbox'
-                    name='search-panel__checkbox-free'
-                    id='search-panel__checkbox-free'
-                    />Бесплатно
+            <input
+                className='search-panel__checkbox search-panel__checkbox-free'
+                type='checkbox'
+                name='search-panel__checkbox-free'
+                id='search-panel__checkbox-free'
+                /><div>Бесплатно</div>
             </label>
             <label className='search-panel__label'>
             <input
-                className='search-panel__checkbox-certificate'
+                className='search-panel__checkbox search-panel__checkbox-certificate'
                 type='checkbox'
                 name='search-panel__checkbox-certificate'
                 id='search-panel__checkbox-certificate'
-                />Сертификат
+                /><div>Сертификат</div>
             </label>
             <button
                 className="search-panel__btn"
