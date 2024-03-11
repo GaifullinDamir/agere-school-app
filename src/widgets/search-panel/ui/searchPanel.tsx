@@ -2,8 +2,8 @@ const SearchPanel = () => {
     return (
         <form className='search-panel'>
             <input
-                    className='search-panel__input'
                     required
+                    className='search-panel__input'
                     type='text' 
                     name='search-panel__input' 
                     id='search-panel__input' 
@@ -14,9 +14,9 @@ const SearchPanel = () => {
                 id="search-panel__select" 
                 name="search-panel__select"
                 >
-                <option>Популярные</option>
-                <option>Дешевле</option>
-                <option>Дороже</option>
+                <option className='search-panel__option'>Популярные</option>
+                <option className='search-panel__option'>Дешевле</option>
+                <option className='search-panel__option'>Дороже</option>
             </select>
             <label className='search-panel__label'>
                 <input
