@@ -1,17 +1,22 @@
 import {useState} from 'react';
 
 type CheckboxProps = {
-    text: string
+    className?: string
+    text: string,
+    name?: string,
+    id?: string
 }
 
-const Checkbox = ({text}: CheckboxProps) => {
+const Checkbox = ({className, text, name, id}: CheckboxProps) => {
     const [isChecked, setIsChecked] = useState(false);
     return (
-    <div className='checkbox'>
+    <div className={`checkbox ${className}`}>
         <label className='checkbox__label'>
             <input
                 className='checkbox__input'
                 type="checkbox"
+                name={name}
+                id={id}
                 onChange={() => {
                 setIsChecked(!isChecked);
                 }}
@@ -20,7 +25,7 @@ const Checkbox = ({text}: CheckboxProps) => {
                 className={`checkbox__span ${isChecked ? 'checkbox__span_active' : ''}`}
                 aria-hidden="true"
             />
-            {text}
+            <div className='checkbox__text'>{text}</div>
         </label>
     </div>
   );

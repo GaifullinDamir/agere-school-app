@@ -1,3 +1,5 @@
+import {Checkbox} from "../../../shared";
+
 const SearchPanel = () => {
     return (
         <form className='search-panel'>
@@ -18,22 +20,19 @@ const SearchPanel = () => {
                 <option className='search-panel__option'>Дешевле</option>
                 <option className='search-panel__option'>Дороже</option>
             </select>
-            <label className='search-panel__label'>
-            <input
+            <Checkbox
                 className='search-panel__checkbox search-panel__checkbox-free'
-                type='checkbox'
+                text='Бесплатно' 
                 name='search-panel__checkbox-free'
                 id='search-panel__checkbox-free'
-                /><div>Бесплатно</div>
-            </label>
-            <label className='search-panel__label'>
-            <input
+                />
+            <Checkbox 
                 className='search-panel__checkbox search-panel__checkbox-certificate'
-                type='checkbox'
+                text='Сертификат'
                 name='search-panel__checkbox-certificate'
                 id='search-panel__checkbox-certificate'
-                /><div>Сертификат</div>
-            </label>
+                
+                />
             <button
                 className="search-panel__btn"
                 type="submit"

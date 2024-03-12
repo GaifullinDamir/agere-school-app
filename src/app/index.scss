@@ -11,7 +11,10 @@
     margin: 0 auto;
 }
 
-// widgets
+//shared
+@import '../shared/ui/index.scss';
+
+//widgets
 @import '../widgets/index.scss';
 
 //pages
