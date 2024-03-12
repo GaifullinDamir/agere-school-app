@@ -1,12 +1,14 @@
-import {Header} from "../../../widgets";
+import {Header, SearchPanel} from "../../../widgets";
 
 const MainPage = () => {
     return (
         <>
             <Header/>
-            <div className='container'>
-                MainPage
-            </div>
+            <main className="mainPage">
+                <div className='container'>
+                    <SearchPanel/>
+                </div>
+            </main>
         </>
         
     );

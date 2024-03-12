@@ -1,9 +1,9 @@
 .dropdown {
     position: absolute;
-    z-index: -1;
+    // z-index: -1;
     background: $white;
     top: 75px;
-    opacity: 100%;
+    display: block;
     right: 0;
     padding: 0;
     margin: 0;
@@ -11,7 +11,6 @@
     height: 280px;
     box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.1);
     text-align: right;
-    transition: 0.5s all;
     &__item {
         list-style: none;
         color: $gray-dark;
@@ -25,9 +24,8 @@
         @include href_hover;
     }
     &_hidden {
-        top: -100%;
-        opacity: 0%;
-        box-shadow: 0px 10px 0px 0px rgba(0, 0, 0, 0.1);
+        display: none;
+        top: -355px;
     }
     
 }

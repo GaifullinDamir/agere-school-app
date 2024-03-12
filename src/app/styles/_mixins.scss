@@ -2,20 +2,28 @@
     transition: 0.3s all;
     &:hover {
         color: $black;
-        transform: scale(1.05);
+        transform: scale(0.95);
     }
 }
 
 @mixin logo_hover {
     transition: 0.3s all;
     &:hover {
-        transform: rotate(5deg) scale(1.1);
+        transform: rotate(1deg) scale(1.1);
     }
 }
 
 @mixin icon_hover {
     transition: 0.3s all;
     &:hover {
-        transform: scale(1.05);
+        transform: rotate(5deg) scale(1.1);
+    }
+}
+
+@mixin button_hover {
+    transition: 0.3s all;
+    &:hover {
+        background: $gray-dark;
+        transform: scale(0.95);
     }
 }
