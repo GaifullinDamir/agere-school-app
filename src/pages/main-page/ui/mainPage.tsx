@@ -4,11 +4,11 @@ const MainPage = () => {
     return (
         <>
             <Header/>
-            <div className='container'>
-                <main className="mainPage">
+            <main className="mainPage">
+                <div className='container'>
                     <SearchPanel/>
-                </main>
-            </div>
+                </div>
+            </main>
         </>
         
     );

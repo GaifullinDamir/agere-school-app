@@ -1,4 +1,4 @@
-import {Checkbox} from "../../../shared";
+import {Checkbox, Button} from "../../../shared";
 
 const SearchPanel = () => {
     return (
@@ -33,12 +33,17 @@ const SearchPanel = () => {
                 id='search-panel__checkbox-certificate'
                 
                 />
-            <button
+            {/* <button
                 className="search-panel__btn"
                 type="submit"
                 >
                 Поиск
-            </button>
+            </button> */}
+            <Button
+                className='search-panel__button'
+                type='submit'
+                text='Поиск'
+                />
         </form>
     );
 };

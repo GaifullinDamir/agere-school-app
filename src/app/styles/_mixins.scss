@@ -19,3 +19,11 @@
         transform: rotate(5deg) scale(1.1);
     }
 }
+
+@mixin button_hover {
+    transition: 0.3s all;
+    &:hover {
+        background: $gray-dark;
+        transform: scale(0.95);
+    }
+}

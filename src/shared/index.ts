@@ -3,6 +3,7 @@ import userIcon from './ui/icons/user.svg';
 import sortIcon from './ui/icons/sort.svg';
 import searchIcon from './ui/icons/search.svg';
 import Checkbox from './ui/components/checkbox/ui/checkbox';
+import Button from './ui/components/button/ui/button';
 
 
 export {
@@ -10,5 +11,6 @@ export {
     userIcon,
     sortIcon,
     searchIcon,
-    Checkbox
+    Checkbox,
+    Button
 }
